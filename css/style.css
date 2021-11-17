@@ -20,7 +20,7 @@ header{
     height: 50px;
     width:calc(100% - 150px);
     max-width: 1200px;
-    background-color: rgb(179, 0, 0);
+    background-color: #001219;
     position: fixed;
     margin-left: 150px;
     display: flex;
@@ -30,7 +30,7 @@ header{
 .upgrade{
     width: 150px;
     height: 100%;
-    background-color: rgba(17, 0, 255, 0.938);
+    background-color: #0012199f;
     
 }
 
@@ -45,14 +45,20 @@ header{
 }
 
 .sidebar{
+    padding-left: 15px;
     color: #fff;
 }
 
 .logo{
     height: 50px;
     width: 100%;
-    background-color: rgb(66, 78, 184)
+    background: url(../img/logo.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
+
+
 /* -----------sidebar-------------- */
 
 
@@ -88,6 +94,11 @@ footer{
     }
     .sidebar{
         width: 50px;
+        padding: 0;
+    }
+    .logo{
+        background-image: url(../img/logo-small.svg);
+        background-position: center;
     }
 
     main{
