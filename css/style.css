@@ -39,7 +39,7 @@ header{
 
 /* -----------sidebar-------------- */
 .sidebar{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     width: 150px;
     background-color: black;
 }
@@ -57,7 +57,7 @@ header{
 
 
 main{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     width: calc(100% - 150px);
     background-color: rgb(85, 34, 34);
 }
