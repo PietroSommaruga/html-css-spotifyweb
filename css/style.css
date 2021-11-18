@@ -14,6 +14,7 @@ body{
 .container{
     height: calc(100vh - 50px);
     width: 100%;
+    min-width: 360px;
     margin: 0 auto;
 }
 /* -----------struttura-------------- */
@@ -28,6 +29,15 @@ ul li{
     text-decoration: none;
     list-style: none;
     color: rgba(255, 255, 255, 0.65);
+}
+
+i{
+    color:rgba(255, 255, 255, 0.452);
+}
+
+.color{
+    color:rgba(255, 255, 255, 0.452);
+
 }
 /* -----------utility-------------- */
 
@@ -137,7 +147,7 @@ header{
 /* -----------main-------------- */
 
 main{
-    margin-top: 50px;
+    margin-top: 50px ;
     height: calc(100vh - 100px);
     width: calc(100% - 150px);
     background-color: #010405;
@@ -172,12 +182,18 @@ main{
 }
 
 .box-content{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: inline-block;
     background: red;
     margin: 20px 5px;
-    
+}
+
+.box-piccolo{
+    display: flex;
+    width: 50%;
+    height: 50%;
+
 }
 /* -----------main - content-------------- */
 
@@ -188,8 +204,97 @@ footer{
     height: 50px;
     width: 100%;
     background-color: #313131;
+    position: fixed;
     display: flex;
-    position: fixed
+    justify-content: space-between;
+
+}
+
+
+.left, .right {
+    width: 200px;
+}
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left .icon{
+    display: flex;
+    justify-content: center;
+    padding: 0 1px;
+}
+
+.left .far{
+    margin: 0 10px;
+}
+
+.text{
+    margin: 0 25px 0 10px;
+}
+
+.left img{
+    margin-left: 15px;
+    vertical-align: middle;
+    width: 30px;
+}
+
+
+footer .center{
+    width: calc(100% - 400px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    flex-shrink: 2;
+}
+
+.center .down {
+    width: 100%;
+}
+
+footer .center i{
+    margin: 0 5px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+input[type="range" i] {
+    width: 60%;
+}
+
+#range{
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+footer .down span{
+    font-size: 10px;
+}
+
+footer .center .far{
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+
+.right{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    line-height: 70px;
+}
+
+.right i{
+    margin: 0 5px;
+}
+
+#volume{
+    vertical-align: middle;
+    width: 100%;
 }
 /* -----------footer-------------- */
 
@@ -206,15 +311,31 @@ footer{
     }
     .sidebar{
         width: 50px;
-        padding: 0;
+        color: black;
     }
+    .sidebar-nav ul li span,
+    .sidebar-nav-down{
+        display: none;
+    }
+    .arrow-dow::before{
+        content: '/f0ab';
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.65);;
+    }
+
     .logo{
         background-image: url(../img/logo-small.svg);
         background-position: center;
     }
 
     main{
-        width: calc(100% - 50px);
+        width: calc(100% - 51px);
+    }
+
+
+    footer .center,
+    .main-nav{
+        display: none;
     }
 }
 

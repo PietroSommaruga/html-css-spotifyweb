@@ -23,10 +23,11 @@
                 <div class="sidebar-nav-up">
                     <div class="logo"></div>
                     <ul>
-                        <li ><i class="fas fa-home"></i>Home</li>
-                        <li><i class="fas fa-search"></i>Cerca</li>
-                        <li><i class="fas">||\</i>La tua libreria</li>
+                        <li ><i class="fas fa-home"></i><span>Home</span></li>
+                        <li><i class="fas fa-search"></i><span>Cerca</span></li>
+                        <li><i class="fas">||\</i><span>La tua libreria</span></li>
                     </ul>
+                    
                 </div>
 
                 <div class="sidebar-nav-down">
@@ -46,8 +47,8 @@
             </div>
 
             <div class="sidebar-down">
-                <p>Installa app</p>
-                <span>Pietro</span>
+                <p class="arrow-down">Installa app</p>
+                <span class="user">Pietro</span>
             </div>
         </div>
         <!-- sidebar -->
@@ -66,7 +67,12 @@
                 </div>
             <div class="main-content">
                 <h3>Recently Played</h3>
-                <div class="box-content"></div>
+                <div class="box-content">
+                    <div class="box-piccolo"></div>
+                    <div class="box-piccolo"></div>
+                    <div class="box-piccolo"></div>
+                    <div class="box-piccolo"></div>
+                </div>
                 <div class="box-content"></div>
                 <div class="box-content"></div>
                 <div class="box-content"></div>
@@ -107,6 +113,38 @@
         <!-- main -->
 
     </div>
-    <footer class="fl"></footer>
+    <footer class="fl">
+
+        <div class="left">
+            <img class="song" src="img/sinister.jpeg" alt="">
+            <div class="text"> 
+                <h4>Sinister</h4>
+                <p class="color"> hall of fame</p>
+            </div>
+            <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+        </div>
+        <div class="center">
+            <div class="up">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="down">
+                <span>2:43</span><input type="range" name="" id="range"><span>4:23</span>
+            </div>
+        </div>
+        <div class="right">
+            <i class="fas fa-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <input type="range" name="" id="volume">
+        </div>
+
+    </footer>
 </body>
 </html>
