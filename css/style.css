@@ -128,8 +128,6 @@ header{
     width: calc(100% - 15px);
     height: 50px;
     background-color: black;
-    z-index: 2;
-
 }
 
 
@@ -189,7 +187,7 @@ main{
 footer{
     height: 50px;
     width: 100%;
-    background-color: #000405dc;
+    background-color: #313131;
     display: flex;
     position: fixed
 }
