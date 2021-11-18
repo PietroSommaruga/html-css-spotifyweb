@@ -317,15 +317,18 @@ footer .center .far{
     .sidebar-nav-down{
         display: none;
     }
-    .arrow-dow::before{
-        content: '/f0ab';
-        font-weight: 400;
+    .arrow-down::before{
+        content: '\f0ab';
+        font-weight: 900;
         color: rgba(255, 255, 255, 0.65);;
     }
 
     .logo{
         background-image: url(../img/logo-small.svg);
-        background-position: center;
+        background-position: cover;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        height: 15px;
     }
 
     main{
@@ -336,6 +339,12 @@ footer .center .far{
     footer .center,
     .main-nav{
         display: none;
+    }
+    footer .left,
+    footer .right{
+        width: 30%;
+        margin: 0;
+        padding: 0;
     }
 }
 
