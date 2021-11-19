@@ -55,6 +55,7 @@
 
         <!-- main -->
         <main class="fl">
+            <div class="main-content">
                 <div class="main-nav">
                     <ul class="ul-flex">
                         <li>IN EVIDENZA</li>
@@ -65,64 +66,63 @@
                         <li>SCOPRI</li>
                     </ul>
                 </div>
-            <div class="main-content">
-                <h2>Recently Played</h3>
-                <div class="row">
-                    <div class="box-content">
+                <h2>Recently Played</h2>
+                <div class="main-content-row ">
+                    <div class="box-content fl">
                         <img src="img/sinister.jpeg" alt="">
                         <div class="description">
                             <h3>Sinister</h3>
                             <span>Subtitle</span>
                         </div>
                     </div>
-                    <div class="box-content">
+                    <div class="box-content fl ">
                         <img src="img/radar.jpeg" alt="">
                         <div class="description">
                             <h3>Il tuo radar</h3>
                             <span>Subtitle</span>
                         </div>
                     </div>
-                    <div class="box-content">
+                    <div class="box-content fl">
                         <img src="img/split.jpeg" alt="">
                         <div class="description">
                             <h3>Split</h3>
                             <span>Subtitle</span>
                         </div>
                     </div>
-                    <div class="box-content">
+                    <div class="box-content fl">
                         <img src="img/mixdaily.jpeg" alt="">
                         <div class="description">
                             <h3>Il tuo dailly mix</h3>
                             <span>Subtitle</span>
                         </div>
                     </div>
-                    <div class="box-content">
+                    <div class="box-content fl">
                         <img src="img/metal_lifting.jpg" alt="">
                         <div class="description">
                             <h3>Playlist metal</h3>
                             <span>Subtitle</span>
                         </div>
                     </div>
-                    <div class="box-content">
-                        <img src="img/youg.jpeg" alt="">
+                    <div class="box-content fl">
+                        <div><img src="img/youg.jpeg" alt=""></div>
                         <div class="description">
                             <h3>Young</h3>
                             <span>Subtitle</span>
                         </div>
                     </div>
                 </div>
-                
-                <h2>Creato per Pietro</h2>
 
-                <div class="row due">
-                    <div class="box-content">
+                 <h2>Creato per Pietro</h2>
+
+                <div class="main-content-row due">
+                    <div class="box-content fl">
                         <img src="img/sinister.jpeg" alt="">
                         <div class="description">
                             <h3>Sinister</h3>
                             <span>Subtitle</span>
                         </div>
                     </div>
-                    <div class="box-content">
+                    <div class="box-content fl">
                         <img src="img/metal_lifting.jpg" alt="">
                         <div class="description">
                             <h3>Playlist metal</h3>
@@ -138,37 +138,94 @@
 
     </div>
     <footer class="fl">
-
         <div class="left">
-            <img class="song" src="img/sinister.jpeg" alt="">
-            <div class="text"> 
-                <h4>Sinister</h4>
-                <p class="color"> hall of fame</p>
+            <img src="./img/sinister.jpeg" alt="" />
+            <div>
+              <h5> Sinister</h5>
+              <span class="color"> Title</span>
             </div>
-            <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
+            <div>
+              <i class="far fa-heart white-font"></i>
+              <i class="far fa-folder white-font"></i>
             </div>
-        </div>
-        <div class="center">
-            <div class="up">
-                <i class="fas fa-random"></i>
-                <i class="fas fa-step-backward"></i>
-                <i class="far fa-play-circle"></i>
-                <i class="fas fa-step-forward"></i>
-                <i class="fas fa-redo"></i>
+          </div>
+          <div class="middle">
+            <div class="middle-top">
+              <i class="fas fa-random"></i>
+              <i class="fas fa-step-backward"></i>
+              <i class="far fa-play-circle"></i>
+              <i class="fas fa-step-forward"></i>
+              <i class="fas fa-undo"></i>
             </div>
-            <div class="down">
-                <span>2:43</span><input type="range" name="" id="range"><span>4:23</span>
+            <div class="middle-bottom">
+              <div class="number">0:50</div>
+              <input id="central-range" type="range" />
+              <div class="number">4:35</div>
             </div>
-        </div>
-        <div class="right">
-            <i class="fas fa-list"></i>
-            <i class="fas fa-desktop"></i>
-            <i class="fas fa-volume-up"></i>
-            <input type="range" name="" id="volume">
-        </div>
+          </div>
+          <div class="right">
+            <div><i class="fas fa-list"></i></div>
+            <div><i class="fas fa-desktop"></i></div>
+            <div><i class="fas fa-volume-up"></i></div>
+            <div><input type="range" /></div>
+          </div>
 
+        
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="left">
+        <img class="song" src="img/sinister.jpeg" alt="">
+        <div class="text"> 
+            <h4>Sinister</h4>
+            <p class="color"> hall of fame</p>
+        </div>
+        <div class="icon">
+            <i class="far fa-heart"></i>
+            <i class="far fa-folder"></i>
+        </div>
+    </div>
+    <div class="center">
+        <div class="up">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo"></i>
+        </div>
+        <div class="down">
+            <span>2:43</span><input type="range" name="range" id="range"><span>4:23</span>
+        </div>
+    </div>
+    <div class="right">
+        <i class="fas fa-list"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up"></i>
+        <input type="range" name="volume" id="volume">
+    </div> -->
