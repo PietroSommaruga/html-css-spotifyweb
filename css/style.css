@@ -37,7 +37,10 @@ i{
 
 .color{
     color:rgba(255, 255, 255, 0.452);
+}
 
+i:hover{
+    color: #fff;
 }
 /* -----------utility-------------- */
 
@@ -95,6 +98,11 @@ header{
 
 .sidebar-nav ul li:hover{
     color: #fff;
+}
+
+.sidebar-nav-up span:hover{
+    border-left: 3px solid green;
+
 }
 
 .sidebar-nav-down{
@@ -168,6 +176,10 @@ main{
 
 /* -----------main-------------- */
 
+.main-nav ul li:hover{
+    color: #fff;
+    border-bottom: 2px solid green;
+}
 
 /* -----------main - content-------------- */
 .main-content{
@@ -265,6 +277,9 @@ footer .left img {
   height: 100%;
 }
 
+.fa-heart:hover{
+    color: red;
+}
 
 
 footer .left i,
