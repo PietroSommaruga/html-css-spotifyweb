@@ -83,12 +83,12 @@ header{
 }
 
 .sidebar-nav{
-    height: calc(100% - 100px);
+    height: calc(100% - 50px);
     min-height: 125px;
 }
 
 .sidebar-nav-down{
-    
+    height: calc(100% - 125px);
 }
 
 
@@ -148,7 +148,7 @@ header{
 
 main{
     margin-top: 50px ;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     width: calc(100% - 150px);
     background-color: #010405;
     overflow-y: scroll;
