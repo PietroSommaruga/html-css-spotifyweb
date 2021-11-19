@@ -147,8 +147,8 @@ header{
 /* -----------main-------------- */
 
 main{
-    margin-top: 50px ;
-    height: calc(100vh - 50px);
+    margin: 50px 0;
+    height: calc(100vh - 100px);
     width: calc(100% - 150px);
     background-color: #010405;
     overflow-y: scroll;
@@ -181,19 +181,38 @@ main{
     height: calc(100% - 50px);
 }
 
-.box-content{
-    width: 150px;
-    height: 150px;
-    display: inline-block;
-    background: red;
-    margin: 20px 5px;
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
 }
 
-.box-piccolo{
-    display: flex;
-    width: 50%;
-    height: 50%;
+.box-content{
+    width: calc(100% / 7);
+    min-width: 120px;
+    height: 160px;
+    position: relative;
+}
+.due{
+    width: 33%;
+}
 
+.row-2 .box-content{
+    margin: 0 10px;
+}
+
+.box-content img{
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+.description{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    background-color: #010405;
 }
 /* -----------main - content-------------- */
 
@@ -207,6 +226,7 @@ footer{
     position: fixed;
     display: flex;
     justify-content: space-between;
+    position: fixed;
 
 }
 
@@ -300,7 +320,19 @@ footer .center .far{
 
 
 /* -----------responsive-------------- */
-@media screen and (min-width: 576px) and (max-width: 1199px) {
+@media screen and (min-width: 576px) and (max-width: 900px) {
+    .row{
+        justify-content: start;
+    }
+    .box-content{
+        width: calc(100% / 4 - 10px);
+        height: 150px;
+        margin: 0 5px;
+    }
+
+    .due{
+        width: 100%;
+    }
 
 }
 
@@ -332,7 +364,17 @@ footer .center .far{
     }
 
     main{
-        width: calc(100% - 51px);
+        width: calc(100% - 50px);
+    }
+
+    .box-content{
+        width: calc(100% / 2 - 20px);
+        height: 150px;
+        margin: 0 10px;
+    }
+
+    .due{
+        width: 100%;
     }
 
 
